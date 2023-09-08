@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(fileUpload());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, "./dist")));
+app.use(express.static(path.join(__dirname, "./build")));
 
 // Use Routers
 require("./routes/product.route")(app);
@@ -37,7 +37,7 @@ require("./routes/payment.route")(app);
 
 // If a route is not matched, serve the React app's index.html
 app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./dist/index.html"));
+  res.sendFile(path.join(__dirname, "./build/index.html"));
 });
 
 // Page not found
