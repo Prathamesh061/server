@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 require("./utils/database")(); // Database initialization
 const { catchError } = require("./middlewares");
-const ErrorHandler = require("./utils/errorHandler");
+const ErrorHandler = require("./utils/errorHandler.js");
 const cors = require("cors");
 const cloudinary = require("cloudinary");
 const fileUpload = require("express-fileupload");
