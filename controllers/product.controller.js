@@ -1,7 +1,7 @@
 const { catchAsyncError } = require("../middlewares");
 const ProductModel = require("../models/product.model");
-const ApiFeatures = require("../utils/apiFeatures");
-const ErrorHandler = require("../utils/errorHandler");
+const ApiFeatures = require("../utils/apiFeatures.js");
+const ErrorHandler = require("../utils/errorHandler.js");
 const cloudinary = require("cloudinary");
 
 exports.createProduct = catchAsyncError(async (req, res, next) => {
