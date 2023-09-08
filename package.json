@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/www",
-    "server": "nodemon ./bin/www",
+    "start": "node ./bin/server.js",
+    "server": "nodemon ./bin/server.js",
     "client": "npm start --prefix ./client ",
     "dev": "concurrently \"npm start\" \"npm run client\""
   },
